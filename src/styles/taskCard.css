@@ -1,0 +1,15 @@
+.task-card-collapsed {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.label {
+    margin-left: 70px;
+}
