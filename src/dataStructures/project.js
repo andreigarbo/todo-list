@@ -10,6 +10,14 @@ export class Project {
         return this._name;
     }
 
+    set id(id) {
+        this._id = id;
+    }
+
+    set tasks(tasks) {
+        this._tasks = tasks;
+    }
+
     addTask(task) {
         this._tasks.push(task);
     }

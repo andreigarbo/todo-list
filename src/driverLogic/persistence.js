@@ -1,3 +1,4 @@
+import { Project } from "../dataStructures/project";
 
 export class Persistence {
     constructor() {
@@ -17,9 +18,21 @@ export class Persistence {
     load() {
         const projectsString = localStorage.getItem("projects");
         let projects = {};
-
         if (projectsString) {
-            projects = JSON.parse(projectsString);
+            let projectObj = JSON.parse(projectsString);
+
+            for (const [projectName, project] of Object.entries(projectObj)) {
+                const thisProject = new Project(projectName);
+                for (const [fieldName, field] of Object.entries(project)) {
+                    if (fieldName == "_id") {
+                        thisProject.id = field;
+                    }
+                    if (fieldName == "_tasks") {
+                        thisProject.tasks = field;
+                    }
+                }
+                projects[projectName] = thisProject;
+            }
         }
         return projects;
     }

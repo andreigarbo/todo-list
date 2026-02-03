@@ -1,0 +1,14 @@
+body {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#content {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    font-family: "Montserrat", sans-serif;
+    height: 100%;
+    background-color: var(--lavender);
+}

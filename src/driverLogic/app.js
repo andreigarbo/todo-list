@@ -34,6 +34,8 @@ export class App {
         const projects = this.getDynamicStorage();
         const projectObj = projects[project];
 
+        console.log(projectObj);
+
         const task = Task(title, description, dueDate, priority);
         projectObj.addTask(task);
 
@@ -46,7 +48,7 @@ export class App {
         const projects = this.getDynamicStorage();
 
         if (name in projects) {
-            throw new Error("Project already exists");
+            console.log("Project already exists");
         }
 
         const project = new Project(name);
