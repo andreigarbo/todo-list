@@ -13,6 +13,7 @@ export class Persistence {
     save(projects) {
         const projectsString = JSON.stringify(projects);
         localStorage.setItem("projects", projectsString);
+        console.log("Saved data!", projectsString);
     }
 
     load() {

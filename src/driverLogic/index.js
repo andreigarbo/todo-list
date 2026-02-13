@@ -25,7 +25,10 @@ const displayController = new DisplayController();
 // testTask1.notes = ["testnote1", "testnote2", "testnote3"]
 // testProject.addTask(testTask1);
 
-// app.createTask("i need to do x y z", "this is a somewhat longer description", "March 12", "high", "testing");
+// app.createTask("i need to do x y z", "this is a somewhat longer description", "March 12", "high", "general");
+// app.createTask("i need to do x y z", "this is a somewhat longer description", "March 12", "high", "general");
+// app.createTask("i need to do x y z", "this is a somewhat longer description", "March 12", "high", "general");
+
 
 // let testTask2 = Task("i also need to do some other, waaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaay longer thing", "this is a somewhat longer description", "December 22", "high");
 // testTask2.notes = ["testnote1", "testnote2", "testnote3"]

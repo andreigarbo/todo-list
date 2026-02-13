@@ -7,11 +7,14 @@ export class App {
     constructor() {
         this._persistentStorage = new Persistence();
         this._defaultProject = new Project("general");
+        this._archiveProject = new Project("archive");
         this._appData = this.getDynamicStorage();
 
-        this._appData[this._defaultProject.name] = this._defaultProject; 
+        this._appData[this._defaultProject.name] = this._defaultProject;
+        this._appData[this._archiveProject.name] = this._archiveProject;
 
-        this.setDynamicStorage(this._appData);
+
+        // this.setDynamicStorage(this._appData);
     }
 
     getDynamicStorage() {

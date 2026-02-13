@@ -7,7 +7,7 @@ export class TaskArea {
 
         this._mainDiv = document.createElement("div");
         this._mainDiv.id="task-area";
-        this._currentProject = null;
+        this._currentProject = "general";
     }
 
     setCurrentProject(projectId) {

@@ -15,14 +15,7 @@ export class DisplayController {
 
         //construct the Task Area
         this._taskArea = new TaskArea();
-        this._taskArea.setCurrentProject("testing");
-
-        // //construct the task card area
-        // this._taskArea = document.createElement("div");
-        // this._taskArea.id = "task-area";
-
-        // this._mainHTMLContent.append(this._sidebar.getContent());
-        // this._mainHTMLContent.append(this._taskArea);
+        this._taskArea.setCurrentProject("general");
     }
 
     render() {
